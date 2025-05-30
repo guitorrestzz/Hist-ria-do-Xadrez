@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Xadrez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="chess-loader">
+            <div class="chess-piece king"></div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>História do Xadrez</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#intro" class="active">Introdução</a></li>
+                <li><a href="#timeline">Linha do Tempo</a></li>
+                <li><a href="#origins">Origens</a></li>
+                <li><a href="#evolution">Evolução</a></li>
+                <li><a href="#curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="intro" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">A História do <span>Xadrez</span></h1>
+            <p class="hero-subtitle">Uma jornada através dos séculos</p>
+            <div class="hero-text">
+                <p>O xadrez, um dos jogos mais antigos e sofisticados do mundo, atravessou séculos e continentes, evoluindo de um simples passatempo da realeza para um esporte mental praticado por milhões de pessoas.</p>
+                <p>Descubra a fascinante jornada deste jogo milenar, desde suas origens controversas até os dias atuais.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#timeline" class="btn primary">Explorar Linha do Tempo</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="chess-piece-decoration king"></div>
+            <div class="chess-piece-decoration queen"></div>
+            <div class="chess-piece-decoration bishop"></div>
+            <div class="chess-piece-decoration knight"></div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <h2>Linha do Tempo</h2>
+            <p>A evolução do xadrez através dos séculos</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-year="Século VI">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/ancient_chess_piece.jpeg" alt="Chaturanga - Antigo jogo indiano">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Origens na Índia</h3>
+                        <p>O Chaturanga surge na Índia durante o Império Gupta, representando as quatro divisões do exército indiano: infantaria, cavalaria, elefantes e carruagens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="Século VII">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/shatranj.jpg" alt="Shatranj - Versão persa do xadrez">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Expansão para a Pérsia</h3>
+                        <p>O jogo chega à Pérsia e recebe o nome de Shatranj. O poema persa Karnamak registra uma das primeiras menções literárias ao jogo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="Século X">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/medieval_chess_king.jpeg" alt="Xadrez árabe - Ilustração medieval">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Influência Árabe</h3>
+                        <p>Os árabes difundem o jogo pelo norte da África e Europa, principalmente através da Península Ibérica e Itália.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="Século XII">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/lewis_chess_pieces.jpeg" alt="Peças de xadrez de Lewis - Xadrez medieval">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Xadrez Moderno</h3>
+                        <p>Surgem as regras que conhecemos hoje, com a inclusão da Dama como peça mais poderosa e a ampliação do movimento do Bispo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="1851">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/london_tournament.jpg" alt="Primeiro torneio internacional em Londres">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Primeiro Torneio Internacional</h3>
+                        <p>Realizado em Londres, marca o início das competições internacionais organizadas de xadrez.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="1886">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/steinitz.jpg" alt="Wilhelm Steinitz">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Primeiro Campeão Mundial</h3>
+                        <p>Wilhelm Steinitz torna-se o primeiro campeão mundial oficial de xadrez, estabelecendo as bases do jogo posicional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="1924">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/fide.jpg" alt="Fundação da FIDE">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Fundação da FIDE</h3>
+                        <p>É criada a Federação Internacional de Xadrez em Paris, que passa a organizar competições oficiais mundiais.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-year="1997">
+                <div class="timeline-content">
+                    <div class="timeline-image">
+                        <img src="img/deep_blue.jpg" alt="Deep Blue vs Kasparov">
+                    </div>
+                    <div class="timeline-text">
+                        <h3>Era Digital</h3>
+                        <p>O supercomputador Deep Blue da IBM derrota o campeão mundial Garry Kasparov, marcando uma nova era na história do xadrez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origins Section -->
+    <section id="origins" class="origins-section">
+        <div class="section-header">
+            <h2>Origens</h2>
+            <p>As raízes históricas do jogo dos reis</p>
+        </div>
+        <div class="origins-content">
+            <div class="origins-image">
+                <img src="img/ancient_chess.jpg" alt="Antigas peças de xadrez">
+                <div class="image-caption">Antigas peças de xadrez encontradas na região da Índia</div>
+            </div>
+            <div class="origins-text">
+                <p>A origem do xadrez é controversa e envolve diversas teorias e lendas fascinantes. A versão mais aceita é que o jogo surgiu na Índia durante o Império Gupta por volta do século VI, onde era conhecido como <em>Chaturanga</em>.</p>
+                
+                <div class="legend-box">
+                    <h3>A Lenda de Sessa</h3>
+                    <p>Uma das lendas mais conhecidas conta que um brâmane chamado Sessa ibn Daher criou o jogo a pedido de um rajá indiano. Como recompensa, pediu um grão de trigo na primeira casa do tabuleiro, dobrando progressivamente a quantidade a cada nova casa - um número que excederia toda a produção mundial de trigo por séculos.</p>
+                </div>
+                
+                <p>Pesquisas recentes, no entanto, sugerem possíveis origens alternativas. Alguns historiadores apontam para uma possível criação na China do século III a.C., enquanto outros defendem que o jogo possa ter surgido na região entre o Uzbequistão e a Pérsia antiga (atual Irã).</p>
+                
+                <p>O que se sabe com certeza é que o jogo se espalhou rapidamente pela Ásia e Oriente Médio, sendo adaptado por diferentes culturas ao longo do caminho. Os persas o chamaram de <em>shatranj</em>, nome que influenciou a nomenclatura do jogo em diversas línguas.</p>
+            </div>
+        </div>
+        <div class="origins-theories">
+            <div class="theory-card" data-theory="india">
+                <div class="theory-icon"><i class="fas fa-om"></i></div>
+                <h3>Teoria Indiana</h3>
+                <p>O jogo teria surgido como Chaturanga, representando as quatro divisões do exército indiano: infantaria, cavalaria, elefantes e carruagens.</p>
+            </div>
+            <div class="theory-card" data-theory="china">
+                <div class="theory-icon"><i class="fas fa-yin-yang"></i></div>
+                <h3>Teoria Chinesa</h3>
+                <p>Baseada no Xiangqi, o xadrez chinês, que teria sido criado pelo general Han Xin no século II a.C., inspirado no jogo Liubo.</p>
+            </div>
+            <div class="theory-card" data-theory="persia">
+                <div class="theory-icon"><i class="fas fa-mosque"></i></div>
+                <h3>Teoria Persa</h3>
+                <p>Defende que o jogo foi criado na Pérsia, baseando-se em evidências arqueológicas encontradas na região datadas do século VI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evolution Section -->
+    <section id="evolution" class="evolution-section">
+        <div class="section-header">
+            <h2>Evolução</h2>
+            <p>Como o xadrez se transformou ao longo dos séculos</p>
+        </div>
+        <div class="evolution-content">
+            <div class="evolution-text">
+                <p>O xadrez passou por profundas transformações ao longo de sua história milenar. A versão que conhecemos hoje é resultado de séculos de adaptações e refinamentos.</p>
+                
+                <p>Por volta do século XV, o jogo estava amplamente difundido pela Europa. A versão europeia do xadrez passou por transformações significativas que a tornaram mais dinâmica:</p>
+                
+                <ul class="evolution-list">
+                    <li>
+                        <span class="evolution-highlight">A Dama</span> tornou-se a peça mais poderosa do jogo, substituindo o antigo "vizir" que tinha movimentos limitados
+                    </li>
+                    <li>
+                        <span class="evolution-highlight">O Bispo</span> passou a se mover por diagonais completas, aumentando seu alcance e importância estratégica
+                    </li>
+                    <li>
+                        <span class="evolution-highlight">O Roque</span> foi introduzido como movimento especial para proteger o rei e conectar as torres
+                    </li>
+                    <li>
+                        <span class="evolution-highlight">A captura en passant</span> e a promoção do peão foram padronizadas
+                    </li>
+                </ul>
+                
+                <p>Estas mudanças aceleraram o ritmo do jogo e abriram novas possibilidades estratégicas. Foi neste período que começaram a surgir as primeiras análises de aberturas e estudos teóricos mais aprofundados.</p>
+                
+                <p>Com o surgimento dos torneios internacionais no século XIX e a criação da FIDE no século XX, as regras foram padronizadas globalmente, permitindo que jogadores de diferentes países e culturas pudessem competir sob as mesmas condições.</p>
+            </div>
+            <div class="evolution-pieces">
+                <div class="piece-evolution">
+                    <div class="piece-old">
+                        <img src="img/old_queen.jpg" alt="Antiga peça do Vizir">
+                        <span>Vizir (Shatranj)</span>
+                    </div>
+                    <div class="evolution-arrow">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div class="piece-new">
+                        <img src="img/modern_queen.jpg" alt="Dama moderna">
+                        <span>Dama (Xadrez moderno)</span>
+                    </div>
+                </div>
+                <div class="piece-evolution">
+                    <div class="piece-old">
+                        <img src="img/old_bishop.jpg" alt="Antigo Alfil">
+                        <span>Alfil (Shatranj)</span>
+                    </div>
+                    <div class="evolution-arrow">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                    <div class="piece-new">
+                        <img src="img/modern_bishop.jpg" alt="Bispo moderno">
+                        <span>Bispo (Xadrez moderno)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosities Section -->
+    <section id="curiosities" class="curiosities-section">
+        <div class="section-header">
+            <h2>Curiosidades</h2>
+            <p>Fatos fascinantes sobre a história do xadrez</p>
+        </div>
+        <div class="curiosities-grid">
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h3>Etimologia</h3>
+                <p>O nome "xadrez" vem do persa "shah" (rei) e "mat" (morto), que significa "o rei está morto" - origem da expressão "xeque-mate".</p>
+            </div>
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+                <h3>Peça mais antiga</h3>
+                <p>A peça de xadrez mais antiga encontrada data do século VI, descoberta no Uzbequistão durante escavações arqueológicas.</p>
+            </div>
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Primeiro livro</h3>
+                <p>O primeiro livro dedicado exclusivamente ao xadrez foi escrito pelo jogador espanhol Luis Ramirez de Lucena em 1497.</p>
+            </div>
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-hourglass-half"></i>
+                </div>
+                <h3>Relógio de xadrez</h3>
+                <p>O relógio de xadrez foi introduzido em torneios na década de 1880 para limitar o tempo das partidas, após jogos que duravam mais de 14 horas.</p>
+            </div>
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Grande Mestre</h3>
+                <p>O título de Grande Mestre foi oficialmente estabelecido pela FIDE em 1950, com apenas 27 jogadores recebendo o título inicialmente.</p>
+            </div>
+            <div class="curiosity-card">
+                <div class="curiosity-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>Prodígio</h3>
+                <p>Bobby Fischer, aos 15 anos, tornou-se o mais jovem Grande Mestre da história em 1958, um recorde que durou décadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <div class="quote-mark"><i class="fas fa-quote-left"></i></div>
+            <blockquote>
+                <p>O xadrez é a ginástica da inteligência.</p>
+                <cite>— Blaise Pascal</cite>
+            </blockquote>
+            <div class="quote-mark"><i class="fas fa-quote-right"></i></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>História do Xadrez</h2>
+                <p>Uma jornada através dos séculos</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#intro">Introdução</a></li>
+                        <li><a href="#timeline">Linha do Tempo</a></li>
+                        <li><a href="#origins">Origens</a></li>
+                        <li><a href="#evolution">Evolução</a></li>
+                        <li><a href="#curiosities">Curiosidades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Referências</h3>
+                    <ul>
+                        <li><a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_do_xadrez" target="_blank">Wikipédia</a></li>
+                        <li><a href="https://www.chess.com" target="_blank">Chess.com</a></li>
+                        <li><a href="https://www.fide.com" target="_blank">FIDE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 História do Xadrez. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
