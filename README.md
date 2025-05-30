@@ -34,10 +34,4 @@ Desenvolvi primeiro um protótipo completo no Figma, considerando:
 - Tipografia elegante para combinar com o tema histórico
 - Wireframes para todas as breakpoints responsivas
 
-![Figma Prototype](xadrez.png) *// Adicione imagem do seu protótipo*
-
-## 🚀 Como Executar Localmente
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/chess-history.git
+![Figma Prototype](xadrez.png) 
